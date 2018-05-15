@@ -1,2 +1,2 @@
 # Zerojudge Problems
-## I'm the beginner.
+## Trying to AC all problems.
