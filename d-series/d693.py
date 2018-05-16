@@ -1,6 +1,6 @@
 GCD = lambda a, b: (GCD(b, a % b) if a % b else b)
 LCM = lambda a, b: (a*b//GCD(a,b)) 
-
+a = int(input())
 while a:
     s = [int(x) for x in input().split()]
     ans = LCM(s[0], s[1])
