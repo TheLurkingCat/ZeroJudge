@@ -1,6 +1,6 @@
 def check (n, s, x):
     if x != 1 and x != n - 1:
-        for r in range(1, s):
+        for _ in range(1, s):
             x = pow(x, 2 ,n)
             if x == n - 1:
                 return 1
