@@ -1,2 +1,1 @@
-# Zerojudge Problems
-## Trying to AC all problems.
+# Trying to AC all problems.
