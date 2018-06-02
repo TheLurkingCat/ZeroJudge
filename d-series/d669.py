@@ -1,5 +1,5 @@
 while True:
-    h1, m1 ,h2, m2 = [int(x) for x in input().split()]
+    h1, m1, h2, m2 = [int(x) for x in input().split()]
     if h1 or h2 or m1 or m2:
         if h1 == h2:
             if m1 > m2:

@@ -1,4 +1,6 @@
 output = []
+
+
 def DFS(left, right, k):
     c = 2 * n
     if k == c:
@@ -12,6 +14,8 @@ def DFS(left, right, k):
         output.append(')')
         DFS(left, right+1, k+1)
         del output[-1]
+
+
 while True:
     try:
         n = int(input())

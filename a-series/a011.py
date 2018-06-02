@@ -12,4 +12,3 @@ while True:
             temp.append(x)
     k = ''.join(temp)
     print(len(k.split()))
- 

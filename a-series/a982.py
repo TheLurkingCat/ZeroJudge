@@ -5,6 +5,7 @@ def vaild(x, y, step):
         return False
     return True
 
+
 a = int(input())
 maze = []
 stack = [(1, 1)]

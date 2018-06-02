@@ -11,6 +11,7 @@ def paint(x, y):
     paint(x, y+1)
     paint(x, y-1)
 
+
 output = []
 a = int(input())
 pic = []
@@ -21,4 +22,3 @@ paint(pos_x, pos_y)
 for lines in pic:
     output.append(''.join(lines))
 print('\n'.join(output))
-

@@ -7,4 +7,3 @@ while True:
     for char in a:
         s.append(chr(ord(char) - 7))
     print(''.join(s))
-    

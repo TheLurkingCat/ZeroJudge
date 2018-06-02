@@ -5,7 +5,8 @@ while True:
         break
     if not a:
         break
-    check = sum([int(x) * i for i, x in enumerate(a[:-2].replace('-', ''), 1)]) % 11
+    check = sum(
+        [int(x) * i for i, x in enumerate(a[:-2].replace('-', ''), 1)]) % 11
     if check == 10:
         check = 'X'
     else:

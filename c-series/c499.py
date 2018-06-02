@@ -19,6 +19,8 @@ def lcs(a, b):
             x -= 1
             y -= 1
     return len(result)
+
+
 a = input()
 b = input()
 T = int(input())

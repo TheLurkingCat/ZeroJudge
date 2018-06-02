@@ -5,7 +5,7 @@ while True:
         break
     y = 0
     ans = 0
-    for i,x in enumerate(a):
+    for i, x in enumerate(a):
         if x == 'y':
             ans += abs(i - y)
             y += 3

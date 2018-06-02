@@ -1,6 +1,6 @@
 while True:
     try:
-        output = input().replace('or', '||').replace('and','&&')
+        output = input().replace('or', '||').replace('and', '&&')
     except EOFError:
         break
     a = output.split()
@@ -13,5 +13,5 @@ while True:
         temp = str(eval(temp))
     temp = bin(int(temp))[2:]
     length -= len(temp)
-    temp = '0'*length +temp
+    temp = '0'*length + temp
     print('{} = {}'.format(output, temp))

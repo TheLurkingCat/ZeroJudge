@@ -1,5 +1,5 @@
 while True:
     try:
-        print(eval(input().replace('/','//')))
+        print(eval(input().replace('/', '//')))
     except EOFError:
         break

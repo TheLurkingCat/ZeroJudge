@@ -3,4 +3,4 @@ while True:
         s = [int(x) for x in input().split()]
     except EOFError:
         break
-    print ((s[0]+s[1])*2)
+    print((s[0]+s[1])*2)

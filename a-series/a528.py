@@ -10,4 +10,3 @@ while True:
     s.sort()
     s = [str(num) for num in s]
     print('\n'.join(s))
-    

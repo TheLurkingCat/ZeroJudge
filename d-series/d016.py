@@ -3,7 +3,7 @@ while True:
         s = [x for x in input().split()]
     except EOFError:
         break
-    stack=[]
+    stack = []
     for item in s:
         if item.isdigit():
             stack.append(int(item))
@@ -21,5 +21,5 @@ while True:
             elif item == '%':
                 a = stack.pop()
                 b = stack.pop()
-                stack.append(b%a)
+                stack.append(b % a)
     print(stack.pop())

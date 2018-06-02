@@ -6,6 +6,7 @@ while True:
     except EOFError:
         break
     try:
-        print(Decimal(a).sqrt().quantize(Decimal('1E-50'), rounding=ROUND_FLOOR))
+        print(Decimal(a).sqrt().quantize(
+            Decimal('1E-50'), rounding=ROUND_FLOOR))
     except InvalidOperation:
         print(a)

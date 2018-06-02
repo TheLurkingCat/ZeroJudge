@@ -15,9 +15,9 @@ while True:
         elif a == 0:
             break
         if ans > a:
-            print ("%5d  ABUNDANT" % a)
+            print("%5d  ABUNDANT" % a)
         elif ans == a:
-            print ("%5d  PERFECT" % a)
+            print("%5d  PERFECT" % a)
         else:
-            print ("%5d  DEFICIENT" % a)
+            print("%5d  DEFICIENT" % a)
 print('END OF OUTPUT')

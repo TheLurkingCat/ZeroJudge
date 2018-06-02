@@ -6,6 +6,6 @@ while a:
     for num in a:
         if num == '0':
             break
-        ans+=1
+        ans += 1
     print(ans)
     a = int(input())

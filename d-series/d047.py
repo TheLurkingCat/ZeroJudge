@@ -10,11 +10,11 @@ while True:
         ordinary = False
         leap = True
     if a % 15 == 0:
-        print ("This is huluculu festival year.")
+        print("This is huluculu festival year.")
         ordinary = False
     if a % 55 == 0 and leap:
-        print ("This is bulukulu festival year.")
+        print("This is bulukulu festival year.")
         ordinary = False
     if ordinary:
-        print ("This is an ordinary year.")
+        print("This is an ordinary year.")
     print()

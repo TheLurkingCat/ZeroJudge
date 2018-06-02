@@ -1,7 +1,7 @@
 ans = []
 while True:
     try:
-        s = s=[int(x) for x in input().split()]
+        s = s = [int(x) for x in input().split()]
     except EOFError:
         break
     tmp = s[0] % (2 ** s[1])

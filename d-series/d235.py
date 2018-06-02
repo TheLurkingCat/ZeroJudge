@@ -9,7 +9,7 @@ while not i == "0":
         else:
             chi += s[num]
     if abs(chi - al) % 11:
-        print (i, "is not a multiple of 11.")
-    else :
-        print (i, "is a multiple of 11.")
+        print(i, "is not a multiple of 11.")
+    else:
+        print(i, "is a multiple of 11.")
     i = input()

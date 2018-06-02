@@ -16,4 +16,4 @@ if s[1] < 10:
     ans += "0" + str(s[1])
 else:
     ans += str(s[1])
-print (ans)
+print(ans)

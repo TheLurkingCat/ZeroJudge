@@ -1,6 +1,7 @@
 def determinan(w, x, y, z):
     return w * z - x * y
 
+
 while True:
     try:
         w, x = [int(x) for x in input().split()]

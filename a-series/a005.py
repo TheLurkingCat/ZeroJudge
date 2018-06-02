@@ -8,5 +8,5 @@ while a:
         ans.append(str(2 * s[3] - s[2]))
     else:
         ans.append(str((s[3] ** 2) // s[2]))
-    print (' '.join(ans))
+    print(' '.join(ans))
     a -= 1

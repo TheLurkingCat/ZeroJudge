@@ -1,2 +1,2 @@
 a = int(input())
-print ((85-a)%60)
+print((85-a) % 60)

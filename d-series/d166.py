@@ -7,7 +7,7 @@ while not a == '-1':
         c = 0
         for j in range(length):
             if ans[j]:
-                continue     
+                continue
             if c == a[i]:
                 ans[j] = str(i+1)
                 break

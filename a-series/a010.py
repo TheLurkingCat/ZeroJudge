@@ -4,6 +4,8 @@ def count_pow(x, y):
         x /= y
         result += 1
     return result
+
+
 while True:
     try:
         i = int(input())
@@ -25,5 +27,3 @@ while True:
         a += 1
         ans += " * "
     print(ans[: -3])
-
- 

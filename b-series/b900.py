@@ -4,7 +4,7 @@ while True:
     except EOFError:
         break
     output = [0]*a
-    state = {x:x for x in range(1,a+1)}
+    state = {x: x for x in range(1, a+1)}
     for _ in range(b):
         temp = input()
         for i in range(1, a):

@@ -4,7 +4,7 @@ while True:
     except EOFError:
         break
     while not a == b:
-        if a > b :
+        if a > b:
             a -= b
         else:
             b -= a

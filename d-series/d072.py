@@ -5,4 +5,3 @@ for times in range(1, x+1):
         print("Case {}: a leap year".format(times))
     else:
         print("Case {}: a normal year".format(times))
-    

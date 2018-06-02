@@ -6,7 +6,8 @@ while True:
         a = input()
     except EOFError:
         break
-    s = sorted(Counter([int(x) for x in input().split()]).most_common(), key=itemgetter(1, 0))
+    s = sorted(Counter([int(x) for x in input().split()]
+                       ).most_common(), key=itemgetter(1, 0))
     k = s[-1][1]
     for x in s:
         if k == x[1]:

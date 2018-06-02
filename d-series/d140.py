@@ -6,7 +6,7 @@ while True:
         break
     if 0 <= a <= 100:
         a = a * 9 / 10 + 8
-    elif 100 < a <=500:
+    elif 100 < a <= 500:
         a = a * 8 / 10
     else:
         a = a * 6 / 10

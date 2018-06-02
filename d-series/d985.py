@@ -6,7 +6,7 @@ while True:
     for i in range(1, a+1):
         best = 0
         avg = 0
-        b= int(input())
+        b = int(input())
         for _ in range(b):
             minute, second = [int(x) for x in input().split()]
             time = minute * 60 + second

@@ -1,4 +1,4 @@
-while True :
+while True:
     try:
         s = input().split()
     except EOFError:

@@ -4,4 +4,4 @@ while True:
         a, b = [int(i) for i in input().split()]
     except EOFError:
         break
-    print (gcd(a, b))
+    print(gcd(a, b))

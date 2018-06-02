@@ -11,4 +11,4 @@ for i in range(a):
     if not change:
         change = 0.00
     output.append('{:.2f}% {}'.format(change, state))
-print('\n'.join(output)
+print('\n'.join(output))

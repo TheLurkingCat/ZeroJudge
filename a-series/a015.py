@@ -11,4 +11,4 @@ while True:
         for j in range(a[0]):
             ans += str(b[j][i]) + " "
         ans = ans[:-1] + '\n'
-    print (ans)
+    print(ans)

@@ -2,7 +2,7 @@ while True:
     try:
         a = input()
     except EOFError:
-        break   
+        break
     ans = a
     a = int(a)
     s = []
@@ -16,6 +16,6 @@ while True:
             temp += int(num) ** 2
         a = temp
     else:
-        print (ans + " is a happy number")
+        print(ans + " is a happy number")
         continue
     print(ans + " is an unhappy number")

@@ -1,4 +1,4 @@
-while True :
+while True:
     try:
         a, b = [int(x) for x in input().split()]
     except EOFError:
@@ -8,7 +8,7 @@ while True :
         num = str(num)
         length = len(num)
         check = str(sum([pow(int(x), length) for x in list(num)]))
-        if check == num: 
+        if check == num:
             ans.append(num)
     if ans:
         print(' '.join(ans))

@@ -24,4 +24,4 @@ while True:
         s.append(temp*2)
     else:
         s.append(temp)
-    print (''.join(s))
+    print(''.join(s))

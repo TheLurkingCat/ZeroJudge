@@ -4,4 +4,4 @@ while True:
     except EOFError:
         break
     b = ord(input()[:1])
-    print((b-a+26)%26)
+    print((b-a+26) % 26)

@@ -9,5 +9,5 @@ while not a == "0":
             print("Fail")
             break
     else:
-        print (ans)
+        print(ans)
     a = input()

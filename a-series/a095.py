@@ -4,4 +4,3 @@ while True:
     except EOFError:
         break
     print(b+1 if a > b else b)
-

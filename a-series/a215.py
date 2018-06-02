@@ -10,6 +10,4 @@ while True:
         ans += 1
         if total > b:
             break
-    print (ans)
-  
- 
+    print(ans)

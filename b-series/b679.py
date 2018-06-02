@@ -10,4 +10,3 @@ while True:
         print(k)
     else:
         print(0)
-    

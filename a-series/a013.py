@@ -30,6 +30,7 @@ def roman_to_number(s):
                 output -= 200
     return output
 
+
 def number_to_roman(i):
     output = ""
     if not i:
@@ -56,10 +57,10 @@ def number_to_roman(i):
         elif i >= 50:
             i -= 50
             output += "L"
-        elif i >= 40 :
+        elif i >= 40:
             i -= 40
             output += "XL"
-        elif i >= 10 :
+        elif i >= 10:
             i -= 10
             output += "X"
         elif i >= 9:
@@ -75,6 +76,8 @@ def number_to_roman(i):
             i -= 1
             output += "I"
     return output
+
+
 a = input()
 while not a == '#':
     x, y = a.split()

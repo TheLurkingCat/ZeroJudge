@@ -6,7 +6,8 @@ while True:
     a, b, c = s
     discriminant = b ** 2 - 4 * a * c
     if discriminant > 0:
-        print('Two different roots x1={} , x2={}'.format(int((-b + discriminant ** 0.5) // 2 * a), int((-b - discriminant ** 0.5) // 2 * a)))
+        print('Two different roots x1={} , x2={}'.format(int(
+            (-b + discriminant ** 0.5) // 2 * a), int((-b - discriminant ** 0.5) // 2 * a)))
     elif discriminant < 0:
         print('No real root')
     else:

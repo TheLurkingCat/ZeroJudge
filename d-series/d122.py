@@ -3,6 +3,8 @@ def f(n):
         return 0
     n //= 5
     return n + f(n)
+
+
 while True:
     try:
         n = int(input())

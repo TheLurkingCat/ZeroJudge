@@ -4,4 +4,3 @@ while not a == "0":
     ans = [str(x) for x in sorted(s)]
     print(' '.join(ans))
     a = input()
-    

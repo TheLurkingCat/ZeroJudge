@@ -6,6 +6,6 @@ while True:
     except EOFError:
         break
     x = Counter(input().split())
-    for x ,y in x.most_common():
+    for x, y in x.most_common():
         output.append(x)
     print(*output)

@@ -1,5 +1,5 @@
 s = input().split()
-k = [0,0]
+k = [0, 0]
 while not s[0] == "Game":
     a = s[1][-1:]
     b = s[1][-1:]
@@ -23,6 +23,6 @@ while not s[0] == "Game":
         k[0] += 1
     s = input().split()
 if k[0] > k[1]:
-    print ("悲慘的籌措起香油錢")
+    print("悲慘的籌措起香油錢")
 else:
     print("螢火的蹤跡")

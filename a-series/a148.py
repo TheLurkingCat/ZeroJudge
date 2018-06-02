@@ -1,6 +1,6 @@
 while True:
     try:
-        s=[int(x) for x in input().split()]
+        s = [int(x) for x in input().split()]
     except EOFError:
         break
     del s[0]

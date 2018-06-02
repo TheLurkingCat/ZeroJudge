@@ -4,7 +4,7 @@ while True:
     except EOFError:
         break
     ans = []
-    s = {y:str(x+1) for x, y in enumerate(input().split())}
+    s = {y: str(x+1) for x, y in enumerate(input().split())}
     c = (x for x in input().split())
     for num in c:
         try:

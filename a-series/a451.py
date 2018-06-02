@@ -7,6 +7,7 @@ def Fibonacci(max):
         n = n + 1
     return b
 
+
 while True:
     try:
         s = [int(x) for x in input().split()]
