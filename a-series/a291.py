@@ -1,13 +1,15 @@
 answer = []
+ans_append = answer.append
 while True:
     try:
-        correct = [x for x in input().split()]
+        correct = input().split()
     except EOFError:
         break
     num = int(input())
     for _ in range(num):
         ans = correct.copy()
-        case = [x for x in input().split()]
+        rmv = ans.remove
+        case = input().split()
         A = 0
         i = 0
         while i < len(ans):
@@ -18,10 +20,9 @@ while True:
             else:
                 i += 1
         B = 0
-        length = len(ans)
         for i in case:
             if i in ans:
                 B += 1
-                ans.remove(i)
-        answer.append('{}A{}B'.format(A, B))
-print('\n'.join(answer))
+                rmv(i)
+        ans_append('{}A{}B'.format(A, B))
+print(*answer, sep='\n')

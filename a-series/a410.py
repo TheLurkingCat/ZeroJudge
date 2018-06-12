@@ -5,7 +5,7 @@ deltay = s[0] * s[5] - s[2] * s[3]
 if delta:
     ans = 'x={:.2f}\ny={:.2f}'.format(deltax/delta, deltay/delta)
     print(ans)
-elif delta == 0 and deltax == 0 and deltay == 0:
+elif not(delta or deltax or deltay):
     print("Too many")
 else:
     print("No answer")

@@ -1,11 +1,8 @@
 a = int(input())
+output = []
+output_append = output.append
 while a:
-    a = bin(a)[2:]
-    a = a[::-1]
-    ans = 0
-    for num in a:
-        if num == '0':
-            break
-        ans += 1
-    print(ans)
+    a = format(a, 'b').split('0')
+    output_append(len(a[-1]))
     a = int(input())
+print(*output, sep='\n')

@@ -1,6 +1,6 @@
 while True:
     try:
-        a, b = input().split()
+        a, b = [int(x) for x in input().split()]
     except EOFError:
         break
-    print(abs(int(a) - int(b)))
+    print(abs(a - b))

@@ -9,5 +9,5 @@ while True:
     for i in range(1, 9):
         s += a % 10 * i
         a //= 10
-    s = 10 - s % 10 % 10
+    s = (10 - s % 10) % 10
     print(alphabet[s])

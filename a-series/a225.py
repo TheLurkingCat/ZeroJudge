@@ -8,5 +8,5 @@ while True:
     s = sorted([(int(x), 9-int(x) % 10)
                 for x in input().split()], key=itemgetter(1, 0), reverse=True)
     # 列表是tuple，只取原數字
-    ans = [str(x) for x, y in s]
-    print(' '.join(ans))
+    ans = next(zip(*s))
+    print(*ans)

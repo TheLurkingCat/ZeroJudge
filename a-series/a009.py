@@ -1,9 +1,6 @@
 while True:
     try:
-        a = input()
+        a = [chr(ord(char) - 7) for char in input()]
     except EOFError:
         break
-    s = []
-    for char in a:
-        s.append(chr(ord(char) - 7))
-    print(''.join(s))
+    print(*a, sep='')

@@ -4,13 +4,14 @@ while True:
     except EOFError:
         break
     ans = []
+    ans_append = ans.append
     for num in range(a, b+1):
         num = str(num)
         length = len(num)
-        check = str(sum([pow(int(x), length) for x in list(num)]))
+        check = str(sum([pow(int(x), length) for x in num]))
         if check == num:
-            ans.append(num)
+            ans_append(num)
     if ans:
-        print(' '.join(ans))
+        print(*ans)
     else:
         print("none")
