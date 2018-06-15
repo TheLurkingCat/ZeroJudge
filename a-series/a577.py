@@ -1,7 +1,7 @@
 while True:
     try:
         a = int(input())
-        b = int(input())
     except EOFError:
         break
+    b = int(input())
     print(a*b)

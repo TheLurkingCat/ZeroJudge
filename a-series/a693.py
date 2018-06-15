@@ -1,16 +1,15 @@
+ans = []
+push = ans.append
 while True:
     try:
         s1 = [int(x) for x in input().split()]
     except EOFError:
         break
-    s2 = [0]
+    s2 = {0: 0}
     for i, x in enumerate(input().split()):
-        s2.append(int(x)+s2[i])
-    ans = []
+        s2[i+1] = int(x) + s2[i]
     for _ in range(s1[1]):
-        s3 = [int(x) for x in input().split()]
-        left = s3[0] - 1
-        right = s3[1]
-        temp = s2[right] - s2[left]
-        ans.append(str(temp))
-    print('\n'.join(ans))
+        left, right = [int(x) for x in input().split()]
+        left -= 1
+        push(s2[right] - s2[left])
+print(*ans, sep='\n')

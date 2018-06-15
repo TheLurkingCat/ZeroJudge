@@ -1,13 +1,14 @@
 from math import sqrt
 output = []
+push = output.append
 while True:
     try:
         a = int(input())
-    except ValueError:
+    except Exception:
         break
     total = 0
     while not a & 1:
-        a //= 2
+        a >>= 1
         total += 2
     for i in range(3, round(sqrt(a))+1):
         while not a % i:
@@ -16,5 +17,5 @@ while True:
     a -= 1
     total += a
     total += 1 if a else 0
-    output.append(str(total))
-print('\n'.join(output))
+    push(total)
+print(*output, sep='\n')

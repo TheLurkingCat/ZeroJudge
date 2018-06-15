@@ -1,11 +1,12 @@
 from itertools import permutations
-output = []
+from collections import deque
 while True:
+    output = deque()
+    left = output.appendleft
     try:
         a = int(input())
-    except ValueError:
+    except Exception:
         break
-    numbers = list(range(1, a+1))
-    for ans in list(permutations(numbers, a))[::-1]:
-        output.append(''.join(map(str, ans)))
-print('\n'.join(output))
+    for ans in permutations(range(1, a+1), a):
+        left(''.join(map(str, ans)))
+    print(*output, sep='\n')

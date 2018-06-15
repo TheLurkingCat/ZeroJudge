@@ -4,9 +4,9 @@ while True:
     except EOFError:
         break
     s = []
+    push = s.append
     for _ in range(a):
         k = int(input())
-        s.append(k)
+        push(k)
     s.sort()
-    s = [str(num) for num in s]
-    print('\n'.join(s))
+    print(*s, sep='\n')
