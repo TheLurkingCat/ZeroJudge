@@ -1,7 +1,3 @@
-from calendar import isleap
-ans = 0
+from calendar import leapdays
 a, b = [int(x) for x in input().split()]
-for x in range(a, b + 1):
-    if isleap(x):
-        ans += 1
-print(ans)
+print(leapdays(a, b+1))
