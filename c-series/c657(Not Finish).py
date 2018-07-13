@@ -1,7 +1,6 @@
 from collections import OrderedDict
 from operator import itemgetter
 
-# 最早出現是指測資點還是測資
 while True:
     seq = OrderedDict()
     try:
@@ -17,4 +16,10 @@ while True:
             seq[t] = max(seq[t], count) if t in seq else count
             count = 1
             t = word
-    print(*max(seq.items(), key=itemgetter(1)))
+    M = 0
+    word = ''
+    for x, y in seq.items():
+        if y > M:
+            M = y
+            word = x
+    print(word, M)
