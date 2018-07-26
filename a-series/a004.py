@@ -1,9 +1,8 @@
+from calendar import isleap
+
 while True:
     try:
-        a = int(input())
+        year = int(input())
     except EOFError:
         break
-    if (a % 4 == 0 and not a % 100 == 0) or a % 400 == 0:
-        print("閏年")
-    else:
-        print("平年")
+    print('閏年' if isleap(year) else '平年')
