@@ -1,18 +1,20 @@
+from collections import Counter
+from re import sub
+
 while True:
     try:
-        s = [x for x in input().lower() if 96 < ord(x) < 123]
+        s = sub('[^a-z]', '', input().lower())
     except EOFError:
         break
-    flag = 0
-    k = list(set(s))
-    for x in k:
-        if s.count(x) & 1:
-            if len(s) & 1:
-                flag += 1
-                if flag == 2:
-                    print('no...')
-                    break
-            else:
+
+    length = len(s)
+    s = Counter(s)
+    wrong = -1 if length & 1 else 0
+
+    for x in s.most_common():
+        if x[1] & 1:
+            wrong += 1
+            if wrong > 0:
                 print('no...')
                 break
     else:

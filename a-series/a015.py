@@ -11,7 +11,7 @@ while True:
     for _ in range(a[0]):
         b.append([int(x) for x in input().split()])
     b = array(b)
-    savetxt(stdout,b.T,fmt='%i')
+    savetxt(stdout, b.T, fmt='%i')
 """
 
 while True:
@@ -19,12 +19,13 @@ while True:
         a = [int(x) for x in input().split()]
     except EOFError:
         break
-    ans = ''
+    ans = []
     b = []
     for _ in range(a[0]):
         b.append([int(x) for x in input().split()])
     for i in range(a[1]):
+        temp = []
         for j in range(a[0]):
-            ans += str(b[j][i]) + " "
-        ans = ans[:-1] + '\n'
-    print(ans)
+            temp.append(str(b[j][i]))
+        ans.append(' '.join(temp))
+    print('\n'.join(ans))

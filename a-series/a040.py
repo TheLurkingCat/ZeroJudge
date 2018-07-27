@@ -1,3 +1,6 @@
+out = []
+push = out.append
+concate = ' '.join
 while True:
     try:
         a, b = [int(x) for x in input().split()]
@@ -8,10 +11,11 @@ while True:
     for num in range(a, b+1):
         num = str(num)
         length = len(num)
-        check = str(sum([pow(int(x), length) for x in num]))
+        check = str(sum(pow(int(x), length) for x in num))
         if check == num:
             ans_append(num)
     if ans:
-        print(*ans)
+        push(concate(ans))
     else:
-        print("none")
+        push("none")
+print(*out, sep='\n')

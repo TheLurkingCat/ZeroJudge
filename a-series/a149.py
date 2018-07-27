@@ -1,6 +1,12 @@
+from functools import reduce
+from operator import mul
+
+out = []
+push = out.append
+
 a = int(input())
+
 for _ in range(a):
-    ans = 1
-    for x in input():
-        ans *= int(x)
-    print(ans)
+    ans = reduce(mul, (int(x) for x in input()))
+    push(ans)
+print(*out, sep='\n')

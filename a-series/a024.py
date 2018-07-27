@@ -1,7 +1,8 @@
 from math import gcd
+
 while True:
     try:
-        a, b = [int(i) for i in input().split()]
+        ans = gcd(*(int(i) for i in input().split()))
     except EOFError:
         break
-    print(gcd(a, b))
+    print(ans)
