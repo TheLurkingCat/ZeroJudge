@@ -1,4 +1,5 @@
 from re import sub
+
 while True:
     try:
         s = input()

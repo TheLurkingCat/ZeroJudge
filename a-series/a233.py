@@ -1,4 +1,3 @@
 a = input()
-s = [int(x) for x in input().split()]
-s.sort()
-print(*s)
+s = (int(x) for x in input().split())
+print(*sorted(s))
