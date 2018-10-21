@@ -1,8 +1,11 @@
 from itertools import combinations
+
 a = input().split()
-while a != ['0']:
+while True:
     del a[0]
     for ans in combinations(a, 6):
         print(*ans)
-    print()
     a = input().split()
+    if (a == ['0']):
+        break
+    print()
